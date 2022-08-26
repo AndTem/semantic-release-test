@@ -26,20 +26,8 @@ module.exports = {
 					},
 
 					{
-						"type": "bug",
-						"scope":"Button",
-						"section": "🐞 @astral/ui Button bugs",
-						"hidden": false
-					},
-
-					{
-						"type": "bug",
-						"section": "🐞 Bugs",
-						"hidden": false
-					},
-
-					{
 						"type": "feat",
+						"scope":"ui",
 						"section": "✨ New features",
 						"hidden": false
 					},
