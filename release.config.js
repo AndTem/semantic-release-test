@@ -31,6 +31,11 @@ module.exports = {
 						"section": "✨ New features",
 						"hidden": false
 					},
+					{
+						"type": "bug",
+						"scope":"TEST-*",
+						"hidden": false
+					},
 				]
 			}
 		}
