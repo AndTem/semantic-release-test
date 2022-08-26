@@ -36,6 +36,11 @@ module.exports = {
 						"scope":"TEST-*",
 						"hidden": false
 					},
+					{
+						"type": "feat",
+						"scope":"TEST-*",
+						"hidden": false
+					},
 				]
 			}
 		}
