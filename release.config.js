@@ -10,13 +10,13 @@ module.exports = {
 			"changelogFile": "CHANGELOG.md"
 		}
 	],
-	[
-		"@semantic-release/git",
-		{
-			"assets": ["CHANGELOG.md"],
-			"message": "chore: Release note ${nextRelease.version}"
-		}
-	],
+	// [
+	// 	"@semantic-release/git",
+	// 	{
+	// 		"assets": ["CHANGELOG.md"],
+	// 		"message": "chore: Release note ${nextRelease.version}"
+	// 	}
+	// ],
 	[
 		"@semantic-release/github"
 	]
