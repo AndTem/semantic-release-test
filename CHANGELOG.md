@@ -1,3 +1,5 @@
+## [1.5.4](https://github.com/AndTem/semantic-release-test/compare/v1.5.3...v1.5.4) (2022-08-26)
+
 ## [1.5.3](https://github.com/AndTem/semantic-release-test/compare/v1.5.2...v1.5.3) (2022-08-26)
 
 # [1.4.0](https://github.com/AndTem/semantic-release-test/compare/v1.3.0...v1.4.0) (2022-08-26)
