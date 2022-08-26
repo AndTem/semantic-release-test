@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/AndTem/semantic-release-test/compare/v1.1.0...v1.2.0) (2022-08-26)
+
+
+### Features
+
+* Release3 ([821e482](https://github.com/AndTem/semantic-release-test/commit/821e482c0dc8f9c9e1363e63365bee9b5cc24084))
+
 # [1.1.0](https://github.com/AndTem/semantic-release-test/compare/v1.0.0...v1.1.0) (2022-08-26)
 
 
