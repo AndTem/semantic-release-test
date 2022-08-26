@@ -19,26 +19,36 @@ module.exports = {
 			"linkReferences": true,
 			"presetConfig": {
 				"types": [
+					// {
+					// 	"type": "bug",
+					// 	"scope":"ui",
+					// 	"section": "🐞 @astral/ui package bugs",
+					// 	"hidden": false
+					// },
+					// {
+					// 	"type": "feat",
+					// 	"scope":"ui",
+					// 	"section": "✨ New features",
+					// 	"hidden": false
+					// },
+					// {
+					// 	"type": "bug",
+					// 	"scope":"TEST-*",
+					// 	"hidden": false
+					// },
+					// {
+					// 	"type": "feat",
+					// 	"scope":"TEST-*",
+					// 	"hidden": false
+					// },
 					{
 						"type": "bug",
-						"scope":"ui",
 						"section": "🐞 @astral/ui package bugs",
 						"hidden": false
 					},
 					{
 						"type": "feat",
-						"scope":"ui",
 						"section": "✨ New features",
-						"hidden": false
-					},
-					{
-						"type": "bug",
-						"scope":"TEST-*",
-						"hidden": false
-					},
-					{
-						"type": "feat",
-						"scope":"TEST-*",
 						"hidden": false
 					},
 				]
