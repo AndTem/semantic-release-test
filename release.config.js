@@ -11,7 +11,21 @@ module.exports = {
 			],
 		}
 	],
-	"@semantic-release/release-notes-generator",
+	[
+		"@semantic-release/release-notes-generator",
+		{
+			// "preset": "conventionalcommits",
+			"presetConfig": {
+				"types": [
+					{
+						"type": "bug",
+						"section": "Bugs",
+						"hidden": false
+					},
+				]
+			}
+		}
+	],
 	[
 		"@semantic-release/changelog",
 		{
