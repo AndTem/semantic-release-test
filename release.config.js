@@ -4,14 +4,12 @@ module.exports = {
 	"plugins": [
 	[
 		"@semantic-release/commit-analyzer",
-		// {
-		// 	"preset": "conventionalcommits",
-		// 	"releaseRules": [
-		// 		{"type": "bug", "release": "patch"},
-		// 		{"type": "feat", "release": "minor"},
-		// 		{"type": "build", release: false}
-		// 	],
-		// }
+		{
+			"releaseRules": [
+				{"type": "bug", "release": "patch"},
+				{"type": "feat", "release": "minor"}
+			],
+		}
 	],
 	"@semantic-release/release-notes-generator",
 	[
