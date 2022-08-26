@@ -15,13 +15,29 @@ module.exports = {
 		"@semantic-release/release-notes-generator",
 		{
 			"preset": "conventionalcommits",
+			"linkReferences": true,
 			"presetConfig": {
 				"types": [
+					{
+						"type": "bug",
+						"scope":"ui",
+						"section": "🐞 @astral/ui package bugs",
+						"hidden": false
+					},
+
+					{
+						"type": "bug",
+						"scope":"Button",
+						"section": "🐞 @astral/ui Button bugs",
+						"hidden": false
+					},
+
 					{
 						"type": "bug",
 						"section": "🐞 Bugs",
 						"hidden": false
 					},
+
 					{
 						"type": "feat",
 						"section": "✨ New features",
