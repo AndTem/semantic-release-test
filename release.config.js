@@ -43,12 +43,12 @@ module.exports = {
 					// },
 					{
 						"type": "bug",
-						"section": "🐞 @astral/ui package bugs",
+						"section": "🐞 Bugs",
 						"hidden": false
 					},
 					{
 						"type": "feat",
-						"section": "✨ New features",
+						"section": "✨ Features",
 						"hidden": false
 					},
 				]
