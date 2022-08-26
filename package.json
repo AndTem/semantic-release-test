@@ -21,6 +21,7 @@
   "scripts": {
     "lint": "npm run lint --workspaces --if-present",
     "lint:types": "npm run lint:types --workspaces --if-present",
+    "release": "semantic-release",
     "publish": "npm run build --workspaces --if-present && npm run publish --workspaces --if-present"
   },
   "version": "1.4.0"
