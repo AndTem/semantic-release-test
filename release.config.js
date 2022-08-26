@@ -1,8 +1,17 @@
 module.exports = {
-	"branches": "main",
+	"branches": ["main", "next"],
 	"repositoryUrl": "https://github.com/AndTem/semantic-release-test",
 	"plugins": [
-	"@semantic-release/commit-analyzer",
+	[
+		"@semantic-release/commit-analyzer",
+		{
+			"releaseRules": [
+				{"type": "bug", "release": "patch"},
+				{"type": "feat", "release": "minor"},
+				{"type": "build", release: false}
+			],
+		}
+	],
 	"@semantic-release/release-notes-generator",
 	[
 		"@semantic-release/changelog",
