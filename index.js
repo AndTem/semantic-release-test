@@ -1,1 +1,1 @@
-const a = 2244;
+const a = 244;
