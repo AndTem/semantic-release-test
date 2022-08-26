@@ -19,7 +19,12 @@ module.exports = {
 				"types": [
 					{
 						"type": "bug",
-						"section": "Bugs",
+						"section": "🐞 Bugs",
+						"hidden": false
+					},
+					{
+						"type": "feat",
+						"section": "✨ New features",
 						"hidden": false
 					},
 				]
