@@ -5,6 +5,7 @@ module.exports = {
 	[
 		"@semantic-release/commit-analyzer",
 		{
+			// TODO: описать для каждого enum
 			"releaseRules": [
 				{"type": "bug", "release": "patch"},
 				{"type": "feat", "release": "minor"}
@@ -24,7 +25,6 @@ module.exports = {
 						"section": "🐞 @astral/ui package bugs",
 						"hidden": false
 					},
-
 					{
 						"type": "feat",
 						"scope":"ui",
