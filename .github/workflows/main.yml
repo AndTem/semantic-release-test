@@ -1,0 +1,26 @@
+name: 'Main'
+
+on:
+   push:
+     branches: [main]
+
+jobs:
+  releasePackages:
+    name: Release packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: next
+          token: ${{ secrets.PAT }}
+      - name: Install dependencies
+        run: npm i
+      - name: Enable Pull Request Automerge
+        uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
