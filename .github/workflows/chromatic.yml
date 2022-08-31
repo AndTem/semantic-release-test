@@ -24,3 +24,7 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
+        id: semantic-release
+
+      - name: Build @astral/ui
+        run: echo ${{ steps.semantic-release.outputs.NEXT_VERSION }}
