@@ -27,4 +27,4 @@ jobs:
         id: semantic-release
 
       - name: Build @astral/ui
-        run: echo ${{ steps.semantic-release.outputs.NEXT_VERSION }}
+        run: echo ${{ env.NEXT_VERSION }}
