@@ -1,5 +1,5 @@
 module.exports = {
-	"branches": ["main", "next"],
+	"branches": ["main", {name: 'next', prerelease: 'beta'}],
 	"repositoryUrl": "https://github.com/AndTem/semantic-release-test",
 	"plugins": [
 	[
@@ -8,7 +8,8 @@ module.exports = {
 			// TODO: описать для каждого enum
 			"releaseRules": [
 				{"type": "bug", "release": "patch"},
-				{"type": "feat", "release": "minor"}
+				{"type": "build", "release": "patch"},
+				{"type": "feat", "release": "minor"},
 			],
 		}
 	],
@@ -70,6 +71,9 @@ module.exports = {
 	// ],
 	[
 		"@semantic-release/github"
-	]
+	],
+		["@semantic-release/exec", {
+			"prepareCmd": "echo '${nextRelease.notes}'",
+		}],
 ],
 }
