@@ -1,14 +1,21 @@
 name: 'Release'
 
 on:
-  release:
-    types: [published]
-
+  push:
+    branches: [main, next]
+    tags:
+      - 'v*.*.*'
 jobs:
-  releasePackages:
-    name: Release packages
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Test
-        run: echo Test
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      - name: Check output
+        env:
+          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
+        run: |
+          echo $RELEASE_VERSION
+          echo ${{ steps.vars.outputs.tag }}
