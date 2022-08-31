@@ -73,7 +73,7 @@ module.exports = {
 	// 	"@semantic-release/github"
 	// ],
 		["@semantic-release/exec", {
-			"prepareCmd": "echo ${nextRelease} | jq '@json'",
+			"prepareCmd": "echo '${nextRelease.notes}'",
 		}],
 ],
 }

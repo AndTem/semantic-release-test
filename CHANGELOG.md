@@ -1,3 +1,24 @@
+## [2.3.2](https://github.com/AndTem/semantic-release-test/compare/v2.3.1...v2.3.2) (2022-08-31)
+
+
+### 🐞 Bugs
+
+* **TEST-222,ui,Button:** Fix command22 ([7ecb469](https://github.com/AndTem/semantic-release-test/commit/7ecb4690629540ff24afdb81be3dd46538950c1d))
+
+## [2.3.2](https://github.com/AndTem/semantic-release-test/compare/v2.3.1...v2.3.2) (2022-08-31)
+
+
+### 🐞 Bugs
+
+* **TEST-222,ui,Button:** Fix command22 ([7ecb469](https://github.com/AndTem/semantic-release-test/commit/7ecb4690629540ff24afdb81be3dd46538950c1d))
+
+## [2.3.2](https://github.com/AndTem/semantic-release-test/compare/v2.3.1...v2.3.2) (2022-08-31)
+
+
+### 🐞 Bugs
+
+* **TEST-222,ui,Button:** Fix command22 ([7ecb469](https://github.com/AndTem/semantic-release-test/commit/7ecb4690629540ff24afdb81be3dd46538950c1d))
+
 ## [1.5.4](https://github.com/AndTem/semantic-release-test/compare/v1.5.3...v1.5.4) (2022-08-26)
 
 ## [1.5.3](https://github.com/AndTem/semantic-release-test/compare/v1.5.2...v1.5.3) (2022-08-26)
