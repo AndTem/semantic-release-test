@@ -69,9 +69,9 @@ module.exports = {
 	// 		"message": "chore: Release note ${nextRelease.version}"
 	// 	}
 	// ],
-	// [
-	// 	"@semantic-release/github"
-	// ],
+	[
+		"@semantic-release/github"
+	],
 		["@semantic-release/exec", {
 			"prepareCmd": "echo '${nextRelease.notes}'",
 		}],
