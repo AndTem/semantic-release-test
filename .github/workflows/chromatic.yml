@@ -27,4 +27,5 @@ jobs:
         id: semantic-release
 
       - name: Build @astral/ui
-        run: echo "${{ env.IS_NEW }}"
+        if: env.CURRENT_VERSION !== env.NEXT_VERSION
+        run: echo "${{ env.NEXT_VERSION }}"
