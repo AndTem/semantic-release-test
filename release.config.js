@@ -76,7 +76,7 @@ module.exports = {
 			'@semantic-release/exec',
 			{
 				// добавляем в outputs gh actions следущую версию пакетов
-				prepareCmd: "echo 'NEXT_VERSION=${nextRelease.version}'; '${nextRelease.currentVersion}' >> $GITHUB_ENV",
+				prepareCmd: "echo 'NEXT_VERSION=${nextRelease.version}'; 'IS_NEW=${version}' >> $GITHUB_ENV",
 			},
 		],
 ],
