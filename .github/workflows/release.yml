@@ -2,8 +2,8 @@ name: 'Release'
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches: [main, next]
+
 jobs:
   pre_job:
     # continue-on-error: true # Uncomment once integration is finished
