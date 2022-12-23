@@ -10,10 +10,8 @@ module.exports = {
 				{"type": "bug", "release": "patch"},
 				{"type": "build", "release": "patch"},
 				{"type": "feat", "release": "minor"},
+				{"type": "next", "release": "major"},
 			],
-			"parserOpts": {
-				"noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
-			}
 		}
 	],
 	[
