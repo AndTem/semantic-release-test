@@ -19,20 +19,21 @@ jobs:
           concurrent_skipping: 'always'
           skip_after_successful_duplicate: 'true'
 
-  release:
-    needs: pre_job
+  releasePackages:
+    needs: checkConcurrentRelease
     if: needs.pre_job.outputs.should_skip != 'true'
+    name: Release packages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          persist-credentials: false # <<<--- This line
-      - name: Set output
-        id: vars
-        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
-      - name: Check output
+          node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Generate release
+        # Устанавливает в env NEXT_VERSION и CURRENT_VERSION
+        run: npx semantic-release
         env:
-          RELEASE_VERSION: ${{ steps.vars.outputs.tag }}
-        run: |
-          echo $RELEASE_VERSION
-          echo ${{ steps.vars.outputs.tag }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
