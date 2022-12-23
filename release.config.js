@@ -11,6 +11,9 @@ module.exports = {
 				{"type": "build", "release": "patch"},
 				{"type": "feat", "release": "minor"},
 			],
+			"parserOpts": {
+				"noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+			}
 		}
 	],
 	[
