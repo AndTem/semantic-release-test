@@ -2,7 +2,7 @@ name: 'Semantic'
 
 on:
    push:
-     branches: [main, next]
+     branches: [main, next, next-major]
 
 jobs:
   releasePackages:
