@@ -1,5 +1,5 @@
 module.exports = {
-	"branches": ["main", {name: 'next', prerelease: 'beta'}],
+	"branches": ["main", {name: 'next', prerelease: 'beta'}, "next-major"],
 	"repositoryUrl": "https://github.com/AndTem/semantic-release-test",
 	"plugins": [
 	[
