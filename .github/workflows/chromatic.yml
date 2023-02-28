@@ -27,11 +27,11 @@ jobs:
         id: semantic-release
 
       - name: Build @astral/ui
-        if: env.CURRENT_VERSION == env.NEXT_VERSION
+        if: env.CURRENT_VERSION !== env.NEXT_VERSION
         run: npm run unknown
 
       - name: NEWW @astral/ui
-        if: env.CURRENT_VERSION == env.NEXT_VERSION
+        if: env.CURRENT_VERSION !== env.NEXT_VERSION
         run: echo "${{ env.NEXT_VERSION }}"
 
       - uses: dev-drprasad/delete-tag-and-release@v0.2.0
