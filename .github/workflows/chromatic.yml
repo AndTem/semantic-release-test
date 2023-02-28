@@ -37,7 +37,7 @@ jobs:
       - uses: dev-drprasad/delete-tag-and-release@v0.2.0
         if: failure() || env.CURRENT_VERSION != env.NEXT_VERSION
         with:
-          tag_name: ${{ env.NEXT_VERSION }} #(required) tag name to delete
+          tag_name: v${{ env.NEXT_VERSION }} #(required) tag name to delete
           delete_release: true #(optional) default: true
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
