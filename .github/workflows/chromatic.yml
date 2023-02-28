@@ -40,4 +40,4 @@ jobs:
           tag_name: ${{ env.NEXT_VERSION }} #(required) tag name to delete
           delete_release: true #(optional) default: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
