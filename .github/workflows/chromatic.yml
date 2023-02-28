@@ -1,8 +1,8 @@
 name: 'Semantic'
 
 on:
-   push:
-     branches: [main, next]
+  push:
+    branches: [main, next, next-major]
 
 jobs:
   releasePackages:
@@ -28,7 +28,15 @@ jobs:
 
       - name: Build @astral/ui
         if: env.CURRENT_VERSION == env.NEXT_VERSION
-        run: echo "${{ env.NEXT_VERSION }}"
+        run: npm run unknown
 
       - name: NEWW @astral/ui
         run: echo "${{ env.NEXT_VERSION }}"
+
+      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+        if: failure()
+        with:
+          tag_name: ${{ env.NEXT_VERSION }} #(required) tag name to delete
+          delete_release: true #(optional) default: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
