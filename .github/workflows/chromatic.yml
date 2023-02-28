@@ -40,3 +40,4 @@ jobs:
           delete_release: true #(optional) default: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
